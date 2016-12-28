@@ -1,0 +1,19 @@
+.container.top-buffer
+  %nav.navbar.navbar-default
+    %h2 #{t('app.title')}
+
+  = render 'shared/flash_messages'
+
+  .card.search_form
+    .card-header
+      %h5.font-weight-bold.text-xs-center
+        = t('searches.form_title')
+
+    = form_for(@search, html: { id: 'search' }) do |f|
+      .text-xs-center
+        %div.row.top-sm-buffer.form-group
+          %div.offset-xs-2.col-xs-6
+            = f.text_field :username, value: @search.username, class: 'wide form-control', placeholder: t('searches.placeholder')
+          %div.col-xs-2
+            = f.submit t('searches.button_text'), class: 'btn btn-danger'
+

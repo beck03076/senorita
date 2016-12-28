@@ -1,0 +1,17 @@
+@import 'bootstrap';
+@import 'favorito';
+
+
+$bgDefault      : #e74c3c;
+$bgHighlight    : #c0392b;
+$colDefault     : #ecf0f1;
+$colHighlight   : #ffbbbc;
+.navbar-default {
+  background-color: $bgDefault;
+  border-color: $bgHighlight;
+  color: $colDefault;
+  font-weight: bold;
+}
+.top-buffer { margin-top:150px; }
+.top-sm-buffer { margin-top:50px; }
+.wide { width: 590px; }

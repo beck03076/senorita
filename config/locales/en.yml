@@ -1,0 +1,15 @@
+en:
+  app:
+    title: Favorito
+  searches:
+    form_title: Search With Username
+    placeholder: Type a github username...
+    button_text: Search
+    result_text: Favorite Programming Language
+    list_text:   List Of Programming Languages
+  table:
+    no: No.
+    language: Programming Language
+    times: No. Of Repositories
+
+

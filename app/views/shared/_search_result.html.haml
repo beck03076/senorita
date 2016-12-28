@@ -1,0 +1,25 @@
+- if @decorated_result
+  .container
+    .card
+      .card-header
+        %h4.text-xs-center
+          %span.font-weight-bold
+            #{t('searches.result_text')}:
+          #{@decorated_result.favorite_language}
+    .card
+      .card-header
+        %h5.text-xs-center
+          #{t('searches.list_text')}
+      .card-block
+        %table.table.table-bordered.search_results
+          %td #{t('table.no')}
+          %td #{t('table.language')}
+          %td #{t('table.times')}
+          - @decorated_result.sorted_languages_group.each_with_index do |group, index|
+            %tr
+              %td
+                = (index + 1)
+              %td
+                = group[0]
+              %td
+                = group[1]
